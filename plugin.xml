@@ -58,18 +58,18 @@
         <string>vkauthorize</string>
       </array>
     </config-file>
-    <config-file target="*-Info.plist" parent="NSExceptionDomains">
+    <config-file target="*-Info.plist" parent="NSAppTransportSecurity/NSExceptionDomains">
+      <dict>
+        <key>vk.com</key>
         <dict>
-          <key>vk.com</key>
-          <dict>
-            <key>NSExceptionRequiresForwardSecrecy</key>
-            <false/>
-            <key>NSIncludesSubdomains</key>
-            <true/>
-            <key>NSExceptionAllowsInsecureHTTPLoads</key>
-            <true/>
-          </dict>
+          <key>NSExceptionRequiresForwardSecrecy</key>
+          <false/>
+          <key>NSIncludesSubdomains</key>
+          <true/>
+          <key>NSExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
         </dict>
+      </dict>
     </config-file>
   </platform>
 
