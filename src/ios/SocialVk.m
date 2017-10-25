@@ -22,7 +22,7 @@ static NSString *VK_AUTHORIZE_URL_STRING = @"vkauthorize://authorize";
     
     
     if(!inited) {
-        NSString *appId = [arguments objectAtIndex:0];
+        NSString *appId = [command.arguments objectAtIndex:0];
         [VKSdk initializeWithAppId:appId];
         [VKSdk.instance registerDelegate:self];
         VKSdk.instance.uiDelegate = self;
